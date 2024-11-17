@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:41:34 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/17 16:20:44 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/17 20:28:24 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	ft_printu(unsigned int n)
 	return (printed += ft_printc((n % 10) + '0'));
 }
 
-int	ft_printx(int n, char spec)
+int	ft_printx(long n, char spec)
 {
 	int	printed;
 	int remain;
