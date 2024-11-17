@@ -1,8 +1,8 @@
 CC = cc
 FLAGS = -Werror -Wall -Wextra
-SRC = func.c print.c 
+SRC = func.c ft_printf.c 
 OBJ = $(SRC:.c=.o)
-NAME = print.a
+NAME = printf.a
 
 all: $(NAME)
 
