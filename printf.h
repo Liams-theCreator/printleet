@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:29:24 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:18:09 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:38:24 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h>
 
 int	ft_printf(const char *str, ...);
 int	ft_printc(char c);

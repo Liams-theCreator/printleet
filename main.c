@@ -6,12 +6,13 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:40:27 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:16:03 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:38:34 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 #include <limits.h>
+#include <stdio.h>
 
 int main(void)
 {
