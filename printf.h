@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:29:24 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:03:30 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:18:09 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_printc(char c);
 int	ft_prints(const char *str);
 int	ft_printd(int n);
 int	ft_printu(unsigned int n);
-int ft_printx(long n, char spec);
-int ft_printp(void *ptr);
+int	ft_printx(long n, char spec);
+int	ft_printp(void *ptr);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:41:34 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:06:30 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:19:39 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	ft_printu(unsigned int n)
 int	ft_printx(long n, char spec)
 {
 	int	printed;
-	int remain;
+	int	remain;
 
 	printed = 0;
 	remain = 0;

@@ -6,17 +6,17 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 20:07:22 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:12:25 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:19:13 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-static int ft_phelper(unsigned long long nptr)
+static int	ft_phelper(unsigned long long nptr)
 {
 	unsigned long long	remainder;
-	int printed;
-	
+	int					printed;
+
 	printed = 0;
 	if (nptr / 16)
 		printed += ft_phelper(nptr / 16);
@@ -28,10 +28,10 @@ static int ft_phelper(unsigned long long nptr)
 	return (printed);
 }
 
-int ft_printp(void *ptr)
+int	ft_printp(void *ptr)
 {
-	unsigned long long nptr;
-	int printed;
+	unsigned long long	nptr;
+	int					printed;
 
 	printed = 0;
 	nptr = (unsigned long long)ptr;

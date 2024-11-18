@@ -6,13 +6,13 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:30:35 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:02:28 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:20:34 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_search(char spec, va_list args)
+static int	ft_search(char spec, va_list args)
 {
 	int	printed;
 
