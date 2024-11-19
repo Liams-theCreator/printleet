@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:30:35 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:20:34 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/19 13:17:03 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,21 @@
 
 static int	ft_search(char spec, va_list args)
 {
-	int	printed;
-
-	printed = 0;
 	if (spec == 's')
-		return (printed += ft_prints(va_arg(args, const char *)));
+		return (ft_prints(va_arg(args, const char *)));
 	if (spec == 'c')
-		return (printed += ft_printc(va_arg(args, int)));
+		return (ft_printc(va_arg(args, int)));
 	if (spec == 'd' || spec == 'i')
-		return (printed += ft_printd(va_arg(args, int)));
+		return (ft_printd(va_arg(args, int)));
 	if (spec == 'u')
-		return (printed += ft_printu(va_arg(args, unsigned int)));
+		return (ft_printu(va_arg(args, unsigned int)));
 	if (spec == 'x' || spec == 'X')
-		return (printed += ft_printx(va_arg(args, long), spec));
+		return (ft_printx(va_arg(args, long), spec));
 	if (spec == '%')
-		return (printed += ft_printc('%'));
+		return (ft_printc('%'));
 	if (spec == 'p')
-		return (printed += ft_printp(va_arg(args, void *)));
-	return (printed);
+		return (ft_printp(va_arg(args, void *)));
+	return (ft_printc('%') + ft_printc(spec));
 }
 
 int	ft_printf(const char *str, ...)
@@ -45,7 +42,7 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	while (str[i] != '\0')
 	{
-		if (str[i] == '%')
+		if (str[i] == '%' && str[i + 1] != '\0')
 		{
 			i++;
 			printed += ft_search(str[i], args);
