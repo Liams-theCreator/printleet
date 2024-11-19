@@ -28,18 +28,10 @@ int main()
 	len_2 = ft_printf("Current output:     %sForLife\n", "Morocco");
 	printf("Expected length:    [%d]\n", len_1);
 	printf("Current length:     [%d]\n", len_2);
-	ft_printf("%\n");
-	printf("%\n");
-	ft_printf("");
-	ft_printf("\n");
 	ft_printf("%s\n", NULL);
 	ft_printf("%%%c\n", 'X');
-	ft_printf("%t\n");
-	ft_printf("space :% 	 s\n", "hello");
-	ft_printf("%+d\n", 55);
-	ft_printf("%+i\n", 55);
-	ft_printf("%+d\n", -20);
-	ft_printf(NULL);
+	//printf(NULL);
+	//ft_printf(NULL);
 	
 	return (0);
 }

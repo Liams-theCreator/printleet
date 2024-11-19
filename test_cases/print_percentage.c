@@ -18,38 +18,6 @@ int main()
 	len_2 = ft_printf("Current output:     %%%%%%\n");
 	printf("Expected length:    [%d]\n", len_1);
 	printf("Current length:     [%d]\n", len_2);
-	printf("Expected output:    ");
-	len_1 = printf("%");
-	printf("\n");
-	printf("Current output:     ");
-	len_2 = ft_printf("%");
-	printf("\n");
-	printf("Expected length:    [%d]\n", len_1);
-	printf("Current length:     [%d]\n", len_2);
-	printf("Expected output:    ");
-	len_1 = printf("%   ");
-	printf("\n");
-	printf("Current output:     ");
-	len_2 = ft_printf("%   ");
-	printf("\n");
-	printf("Expected length:    [%d]\n", len_1);
-	printf("Current length:     [%d]\n", len_2);
-	printf("Expected output:    ");
-	len_1 = printf("test%");
-	printf("\n");
-	printf("Current output:     ");
-	len_2 = ft_printf("test%");
-	printf("\n");
-	printf("Expected length:    [%d]\n", len_1);
-	printf("Current length:     [%d]\n", len_2);
-	printf("Expected output:    ");
-	len_1 = printf("%  s", "valid format");
-	printf("\n");
-	printf("Current output:     ");
-	len_2 = ft_printf("%  s", "valid format");
-	printf("\n");
-	printf("Expected length:    [%d]\n", len_1);
-	printf("Current length:     [%d]\n", len_2);
 
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:41:34 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:19:39 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/19 17:13:43 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,16 @@ int	ft_printd(int n)
 
 	printed = 0;
 	if (n == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-		return (11);
-	}
+		return (write(1, "-2147483648", 11));
 	if (n < 0)
 	{
-		ft_printc('-');
+		printed += ft_printc('-');
 		n = n * -1;
 	}
 	if (n >= 10)
 		printed += ft_printd(n / 10);
-	return (printed += ft_printc((n % 10) + '0'));
+	printed += ft_printc((n % 10) + '0');
+	return (printed);
 }
 
 int	ft_prints(const char *str)
@@ -43,6 +41,8 @@ int	ft_prints(const char *str)
 	size_t	i;
 
 	i = 0;
+	if (str == NULL)
+		return (write(1, "(null)",6));
 	while (str[i] != '\0')
 	{
 		ft_printc(str[i]);
@@ -58,13 +58,14 @@ int	ft_printu(unsigned int n)
 	printed = 0;
 	if (n / 10)
 		printed += ft_printu(n / 10);
-	return (printed += ft_printc((n % 10) + '0'));
+	printed += ft_printc((n % 10) + '0');
+	return (printed);
 }
 
-int	ft_printx(long n, char spec)
+int	ft_printx(unsigned int n, char spec)
 {
-	int	printed;
-	int	remain;
+	int				printed;
+	unsigned int	remain;
 
 	printed = 0;
 	remain = 0;

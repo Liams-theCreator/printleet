@@ -7,11 +7,9 @@ int main()
 	int len_1 = 0, len_2 = 0;
 
 	/* ===========> %c <=========== */
-	return (printed);
 	printf("----------------------\n");
 	printf("----> CHAR CASES <----\n");
 	printf("----------------------\n");
-	_putchar(10);
 	len_1 = printf("Expected output:    %c\n", 53);
 	len_2 = ft_printf("Current output:     %c\n", 53);
 	printf("Expected length:    [%d]\n", len_1);

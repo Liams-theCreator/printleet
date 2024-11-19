@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:30:35 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/19 13:17:03 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/19 16:09:18 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ static int	ft_search(char spec, va_list args)
 	if (spec == 'u')
 		return (ft_printu(va_arg(args, unsigned int)));
 	if (spec == 'x' || spec == 'X')
-		return (ft_printx(va_arg(args, long), spec));
+		return (ft_printx(va_arg(args, unsigned int), spec));
 	if (spec == '%')
 		return (ft_printc('%'));
 	if (spec == 'p')
 		return (ft_printp(va_arg(args, void *)));
-	return (ft_printc('%') + ft_printc(spec));
+	return (ft_printc(spec));
 }
 
 int	ft_printf(const char *str, ...)

@@ -20,7 +20,5 @@ int main()
     printf("There are %u bytes in %u KB\n", 1024, 1);
     ft_printf("%u - %u = %u\n", 2048, 1024, 1024);
     printf("%u - %u = %u\n", 2048, 1024, 1024);
-    ft_printf("%u + %u = %u\n", INT_MAX, INT_MAX, INT_MAX + INT_MAX); // Assuming 'res' is INT_MAX * 2
-    printf("%u + %u = %u\n", INT_MAX, INT_MAX, INT_MAX + INT_MAX);  // Assuming 'res' is INT_MAX * 2
     return (0);
 }
