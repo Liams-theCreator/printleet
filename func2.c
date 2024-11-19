@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 20:07:22 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/18 20:19:13 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/18 23:26:08 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ int	ft_printp(void *ptr)
 
 	printed = 0;
 	nptr = (unsigned long long)ptr;
+	if (ptr == NULL)
+		return (printed += ft_prints("(nil)"));
 	printed += ft_printc('0');
 	printed += ft_printc('x');
 	printed += ft_phelper(nptr);
