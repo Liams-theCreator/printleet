@@ -6,11 +6,11 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:30:35 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/19 16:09:18 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:32:52 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static int	ft_search(char spec, va_list args)
 {
@@ -28,7 +28,7 @@ static int	ft_search(char spec, va_list args)
 		return (ft_printc('%'));
 	if (spec == 'p')
 		return (ft_printp(va_arg(args, void *)));
-	return (ft_printc(spec));
+	return (ft_printc('%') + ft_printc(spec));
 }
 
 int	ft_printf(const char *str, ...)

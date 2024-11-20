@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:40:27 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/19 16:15:17 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:27:26 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int main(void)
 	int ret1 = 0;
 	int ret2 = 0;
 	int x = 13371337;
-	int tet = 0;
-	int tet2 = 0;
 	char str[] = "Liams the Creator";
 	unsigned int u = 465789324;
 	char empty[] = "";
@@ -47,9 +45,7 @@ int main(void)
 	ft_printf("%w\n", "Invalid specifier");
 	printf("%w\n", "Invalid specifier");
 	
-	tet += ft_printf("%d\n", x);
-	tet2 += printf("%d\n", x);
-	printf("%d\n", tet);
-	printf("%d\n", tet2);
+	ft_printf("-------------------\n");
+
 	return 0;
 }

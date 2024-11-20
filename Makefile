@@ -2,7 +2,7 @@ CC = cc
 FLAGS = -Werror -Wall -Wextra
 SRC = func.c func2.c ft_printf.c 
 OBJ = $(SRC:.c=.o)
-NAME = printf.a
+NAME = libftprintf.a
 
 all: $(NAME)
 

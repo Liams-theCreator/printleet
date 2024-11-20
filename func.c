@@ -6,11 +6,11 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:41:34 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/19 17:13:43 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:31:34 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printc(char c)
 {
@@ -42,7 +42,7 @@ int	ft_prints(const char *str)
 
 	i = 0;
 	if (str == NULL)
-		return (write(1, "(null)",6));
+		return (write(1, "(null)", 6));
 	while (str[i] != '\0')
 	{
 		ft_printc(str[i]);
@@ -72,7 +72,7 @@ int	ft_printx(unsigned int n, char spec)
 	if (n / 16)
 		printed += ft_printx(n / 16, spec);
 	remain = n % 16;
-	if (remain > 10)
+	if (remain >= 10)
 	{
 		if (spec == 'x')
 			printed += ft_printc((remain - 10) + 'a');
