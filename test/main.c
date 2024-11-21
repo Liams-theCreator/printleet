@@ -6,11 +6,11 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:40:27 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/20 15:27:26 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/21 12:42:18 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../printf.h"
+#include "../ft_printf.h"
 #include <limits.h>
 #include <stdio.h>
 
@@ -42,10 +42,12 @@ int main(void)
 	printf("\\\\\\\\\\\\\n");
 	ft_printf("\\\\\\\\\\\\\n");
 	
-	ft_printf("%w\n", "Invalid specifier");
-	printf("%w\n", "Invalid specifier");
+	//ft_printf("%w\n", "Invalid specifier");
+	//printf("%w\n", "Invalid specifier");
 	
 	ft_printf("-------------------\n");
+
+	ft_printf("%");
 
 	return 0;
 }
