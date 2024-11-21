@@ -6,7 +6,7 @@
 /*   By: imellali <imellali@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 12:40:27 by imellali          #+#    #+#             */
-/*   Updated: 2024/11/21 12:42:18 by imellali         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:41:41 by imellali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ int main(void)
 	ft_printf("-------------------\n");
 
 	ft_printf("%");
-
+	ft_printf("\n");
+	ft_printf("%h");
+	ft_printf("\n");
 	return 0;
 }
